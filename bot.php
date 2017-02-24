@@ -20,7 +20,7 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' => ' $sir ดิฉันคือน้อง CCA OPER BOT ค่ะ  $sir'
+				'text' => $sir
 			];
 		   }
                    else {
