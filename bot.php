@@ -29,7 +29,7 @@ if (!is_null($events['events'])) {
 				'messages' => [$messages],
 			];
 			$post = json_encode($data);
-			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . 2ucJafrwHMEYSP2jBdz5C/iWzlBSVRMg4MiV0Zxo+b57F/6/FyKpDEH2AD309EgjVNJEWkSKufGBynh/PaIWa1lpSC9HahiRaFqi9mH4l/9c40wih8MuNKcJhKhLecSsKFmc61YBlEFnmnWkV19ogAdB04t89/1O/w1cDnyilFU=);
+			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . '2ucJafrwHMEYSP2jBdz5C/iWzlBSVRMg4MiV0Zxo+b57F/6/FyKpDEH2AD309EgjVNJEWkSKufGBynh/PaIWa1lpSC9HahiRaFqi9mH4l/9c40wih8MuNKcJhKhLecSsKFmc61YBlEFnmnWkV19ogAdB04t89/1O/w1cDnyilFU=');
 
 			$ch = curl_init($url);
 			curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
