@@ -22,7 +22,17 @@ if (!is_null($events['events'])) {
 				'type' => 'text',
 				'text' => 'ดิฉันคือน้อง CCA OPER BOT ค่ะ'
 			];
-
+		   }
+                   else {
+			   
+			$replyToken = $event['replyToken'];
+			$messages = [
+				'type' => 'text',
+				'text' => 'กรุณาถามให้ตรงคำตอบด้วยค่ะคุณ'
+			];
+			
+			
+		   }
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
@@ -42,7 +52,7 @@ if (!is_null($events['events'])) {
 			curl_close($ch);
 
 			echo $result . "\r\n";
-		}
+		//}
 	}
 }
 echo "OK";
