@@ -16,19 +16,20 @@ if (!is_null($events['events'])) {
 			//$text = $event['message']['text'];
 			// Get replyToken
 			$replyToken = $event['replyToken'];
-
+                        $sir = $event['source']['userId']
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' => 'ดิฉันคือน้อง CCA OPER BOT ค่ะ'
+				'text' => ' $sir \n ดิฉันคือน้อง CCA OPER BOT ค่ะ  $sir'
 			];
 		   }
                    else {
-			   
+			
+			$text = $event['message']['text']
 			$replyToken = $event['replyToken'];
 			$messages = [
 				'type' => 'text',
-				'text' => 'กรุณาถามให้ตรงคำตอบด้วยค่ะคุณ'
+				'text' => '$text \n กรุณาถามให้ตรงคำตอบด้วยค่ะคุณ'
 			];
 			
 			
