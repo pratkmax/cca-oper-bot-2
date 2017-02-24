@@ -13,23 +13,21 @@ if (!is_null($events['events'])) {
 		//if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 		  if ($event['message']['text'] == 'คุณคือใคร') {
 			// Get text sent
-			//$text = $event['message']['text'];
-			// Get replyToken
 			$replyToken = $event['replyToken'];
-                        $sir = $event['source']['userId'];
+                        //$sir = $event['source']['userId'];
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' => $sir
+				'text' => 'ผมคือ MR.CCA ครับ ยินดีให้ความช่วยเหลือเต็มความสามารถครับ'
 			];
 		   }
                    else {
 			
-			$text = $event['message']['text'];
+			//$text = $event['message']['text'];
 			$replyToken = $event['replyToken'];
 			$messages = [
 				'type' => 'text',
-				'text' => $text' กรุณาถามให้ตรงคำตอบด้วยค่ะมึง'
+				'text' => 'กรุณาถามให้ตรงคำตอบด้วยค่ะมึง'
 			];
 			
 			
