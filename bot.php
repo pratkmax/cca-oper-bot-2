@@ -21,13 +21,23 @@ if (!is_null($events['events'])) {
 				'text' => 'ผมคือใครไม่สำคัญ แต่ผมจะช่วยเหลือคุณเต็มความสามารถครับ คุณ ' .  $sir
 			];
 		   }
+		
+		   elseif ($event['message']['text'] == 'พี่ตี๋คือใคร') {
+			$replyToken = $event['replyToken'];
+			$messages = [
+				'type' => 'text',
+				'text' => 'พี่ตี๋คือหัวหน้าผมครับ' 
+			];
+			  			   
+		   }
+			 
                    else {
 			
 			$text = $event['message']['text'];
 			$replyToken = $event['replyToken'];
 			$messages = [
 				'type' => 'text',
-				'text' => $text . '  กรุณาถามให้ตรงคำตอบด้วยค่ะมึง' 
+				'text' => $text . '  ขอโทษที่ยังไม่สามารถโต้ตอบกับบทสนทนานี้ได้นะครับ แต่อีกไม่นานผมจะเก่งกว่านี้ครับ' 
 			];
 			
 			
