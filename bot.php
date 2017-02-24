@@ -14,7 +14,7 @@ if (!is_null($events['events'])) {
 		  if ($event['message']['text'] == 'คุณคือใคร') {
 			// Get text sent
 			$replyToken = $event['replyToken'];
-                        $sir = $event['source']['userId'];
+                        $sir = $event['source']['type'];
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
