@@ -18,16 +18,16 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' => 'ผมคือ MR.CCA ครับ ยินดีให้ความช่วยเหลือเต็มความสามารถครับ'
+				'text' => 'ผมคือใครไม่สำคัญ แต่ผมจะช่วยเหลือคุณเต็มความสามารถครับ'
 			];
 		   }
                    else {
 			
-			//$text = $event['message']['text'];
+			$text = $event['message']['text'];
 			$replyToken = $event['replyToken'];
 			$messages = [
 				'type' => 'text',
-				'text' => 'กรุณาถามให้ตรงคำตอบด้วยค่ะมึง'
+				'text' => $text . 'กรุณาถามให้ตรงคำตอบด้วยค่ะมึง' 
 			];
 			
 			
