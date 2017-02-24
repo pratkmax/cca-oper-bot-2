@@ -20,7 +20,7 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' => ' $sir \n ดิฉันคือน้อง CCA OPER BOT ค่ะ  $sir'
+				'text' => ' $sir ดิฉันคือน้อง CCA OPER BOT ค่ะ  $sir'
 			];
 		   }
                    else {
@@ -29,7 +29,7 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 			$messages = [
 				'type' => 'text',
-				'text' => '$text \n กรุณาถามให้ตรงคำตอบด้วยค่ะคุณ'
+				'text' => '$text กรุณาถามให้ตรงคำตอบด้วยค่ะคุณ'
 			];
 			
 			
