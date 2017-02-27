@@ -30,6 +30,15 @@ if (!is_null($events['events'])) {
 			];
 			  			   
 		   }
+		
+		     elseif ( strpos($event['message']['text'], 'สมพร') !== false || strpos($event['message']['text'], 'ปุ๊') !== false )  {
+			$replyToken = $event['replyToken'];
+			$messages = [
+				'type' => 'text',
+				'text' => 'สำรหับผมแล้ว คำว่า สมพร หรือ ปุ๊ คือคำหยาบนะครับ ไม่ควรกล่าวถึงสองคำนี้' 
+			];
+			  			   
+		   }
 			 
                    else {
 			
