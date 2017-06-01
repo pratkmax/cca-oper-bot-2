@@ -22,7 +22,7 @@ if (!is_null($events['events'])) {
 			];
 		   }
 		
-		   elseif ($event['message']['text'] == 'พี่ตี๋คือใคร') {
+		   elseif ($event['message']['text'] == 'พี่ตี๋คือใคร' || $event['message']['text'] == 'พี่ตี๋เป็นใคร' ) {
 			$replyToken = $event['replyToken'];
 			$messages = [
 				'type' => 'text',
