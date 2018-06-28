@@ -18,7 +18,7 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' => 'ผมคือ MR.CCA ครับ ผมจะช่วยเหลือคุณเต็มความสามารถของผมครับ คุณ ' .  $sir
+				'text' => 'ผมคือ MR.CCA ครับ ผมจะช่วยเหลือคุณเต็มความสามารถของผมครับ ' .  $sir
 			];
 		   }
 		
