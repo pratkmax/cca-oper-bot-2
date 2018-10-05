@@ -1,6 +1,6 @@
 <?php
 $access_token = '2ucJafrwHMEYSP2jBdz5C/iWzlBSVRMg4MiV0Zxo+b57F/6/FyKpDEH2AD309EgjVNJEWkSKufGBynh/PaIWa1lpSC9HahiRaFqi9mH4l/9c40wih8MuNKcJhKhLecSsKFmc61YBlEFnmnWkV19ogAdB04t89/1O/w1cDnyilFU=';
-date_default_timezone_set("Asia/Bangkok");
+$today = date("d/m/Y");
 //$currentDateTime = new DateTime();
 //$now = mktime(); 
 // Get POST body content
@@ -37,7 +37,7 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 			$messages = [
 				'type' => 'text',
-				'text' =>  '$date("Y/m/d") สวัสดีครับ ขอให้เป็นวันที่สดใสนะครับ , have a nice day' 
+				'text' =>  '$today สวัสดีครับ ขอให้เป็นวันที่สดใสนะครับ , have a nice day' 
 			];
 			  			   
 		   }
