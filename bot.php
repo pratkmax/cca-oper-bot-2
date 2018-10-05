@@ -18,7 +18,7 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' => 'ผมคือ MR.CCA ครับ ผมจะช่วยเหลือคุณเต็มความสามารถของผมครับ ' .  $sir
+				'text' => 'ผมคือ MR.CSA ครับ ผมจะช่วยเหลือคุณเต็มความสามารถของผมครับ ' .  $sir
 			];
 		   }
 		
@@ -31,11 +31,11 @@ if (!is_null($events['events'])) {
 			  			   
 		   }
 		
-		     elseif ( strpos($event['message']['text'], 'สมพร') !== false || strpos($event['message']['text'], 'ปุ๊') !== false )  {
+		     elseif ( strpos($event['message']['text'], 'hello') !== false || strpos($event['message']['text'], 'Hello' || strpos($event['message']['text'], 'สวัสดี') !== false )  {
 			$replyToken = $event['replyToken'];
 			$messages = [
 				'type' => 'text',
-				'text' => 'สำรหับผมแล้ว คำว่า สมพร หรือ ปุ๊ คือคำหยาบนะครับ ไม่ควรกล่าวถึงสองคำนี้' 
+				'text' => 'สวัสดีครับ ขอให้เป็นวันที่สดใสนะครับ , have a nice day' 
 			];
 			  			   
 		   }
