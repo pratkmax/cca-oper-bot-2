@@ -31,7 +31,7 @@ if (!is_null($events['events'])) {
 			  			   
 		   }
 		
-		     elseif ( strpos($event['message']['text'], 'hello') !== false || strpos($event['message']['text'], 'Hello' || strpos($event['message']['text'], 'สวัสดี') !== false )  {
+		     elseif ( strpos($event['message']['text'], 'hello') !== false || strpos($event['message']['text'], 'สวัสดี' ) !== false )  {
 			$replyToken = $event['replyToken'];
 			$messages = [
 				'type' => 'text',
@@ -47,7 +47,7 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 			$messages = [
 				'type' => 'text',
-				'text' => $text . '  ขอโทษที่ยังไม่สามารถโต้ตอบกับบทสนทนานี้ได้นะครับ แต่อีกไม่นานผมจะเก่งกว่านี้ครับ' 
+				'text' => $text . '??  ขอโทษที่ยังไม่สามารถโต้ตอบกับบทสนทนานี้ได้นะครับ แต่อีกไม่นานผมจะเก่งกว่านี้ครับ' 
 			];
 			
 			
