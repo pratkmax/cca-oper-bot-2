@@ -1,6 +1,6 @@
 <?php
 $access_token = '2ucJafrwHMEYSP2jBdz5C/iWzlBSVRMg4MiV0Zxo+b57F/6/FyKpDEH2AD309EgjVNJEWkSKufGBynh/PaIWa1lpSC9HahiRaFqi9mH4l/9c40wih8MuNKcJhKhLecSsKFmc61YBlEFnmnWkV19ogAdB04t89/1O/w1cDnyilFU=';
-$currentDateTime = date('Y-m-d H:i:s');
+$currentDateTime = new DateTime();
 // Get POST body content
 $content = file_get_contents('php://input');
 // Parse JSON
