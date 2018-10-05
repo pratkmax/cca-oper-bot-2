@@ -11,7 +11,7 @@ if (!is_null($events['events'])) {
 	foreach ($events['events'] as $event) {
 		// Reply only when message sent is in 'text' format
 		//if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
-		  if ($event['message']['text'] == 'คุณคือใคร') {
+		  if ($event['message']['text'] == '@BOT นายคือใคร' || $event['message']['text'] == '@BOT นายเป็นใคร' ) {
 			// Get text sent
 			$replyToken = $event['replyToken'];
                         $sir = $event['source']['type'];
@@ -22,7 +22,7 @@ if (!is_null($events['events'])) {
 			];
 		   }
 		
-		   elseif ($event['message']['text'] == 'พี่ตี๋คือใคร' || $event['message']['text'] == 'พี่ตี๋เป็นใคร' ) {
+		   elseif ($event['message']['text'] == '@BOT พี่ตี๋คือใคร' || $event['message']['text'] == '@BOT พี่ตี๋เป็นใคร' ) {
 			$replyToken = $event['replyToken'];
 			$messages = [
 				'type' => 'text',
@@ -31,7 +31,7 @@ if (!is_null($events['events'])) {
 			  			   
 		   }
 		
-		     elseif ( strpos($event['message']['text'], 'hello') !== false || strpos($event['message']['text'], 'สวัสดี' ) !== false )  {
+		     elseif ( strpos($event['message']['text'], '@BOT hello') !== false || strpos($event['message']['text'], '@BOT สวัสดี' ) !== false )  {
 			$replyToken = $event['replyToken'];
 			$messages = [
 				'type' => 'text',
