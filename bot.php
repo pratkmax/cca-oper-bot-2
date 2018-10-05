@@ -37,7 +37,7 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 			$messages = [
 				'type' => 'text',
-				'text' =>  '$today สวัสดีครับ ขอให้เป็นวันที่สดใสนะครับ , have a nice day' 
+				'text' =>  '['today'] สวัสดีครับ ขอให้เป็นวันที่สดใสนะครับ , have a nice day' 
 			];
 			  			   
 		   }
